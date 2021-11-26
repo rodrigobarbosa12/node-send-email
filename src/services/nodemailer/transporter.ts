@@ -5,12 +5,12 @@ import fs from 'fs';
 export type ObjectGeneric = { [x: string]: string | number | null };
 
 const transporter = nodemailer.createTransport({
-  host: 'email-ssl.com.br',
+  host: '',
   port: 465,
   secure: true,
   auth: {
-    user: 'notificacoes@speedpix.com.br',
-    pass: 'Maxmax@2021',
+    user: '',
+    pass: '',
   },
   tls: {
     ciphers: 'SSLv3',
@@ -38,7 +38,7 @@ const sendEmail = ({
   text,
   template,
 }: SendEmail): Promise<SentMessageInfo> => transporter.sendMail({
-  from: 'notificacoes@speedpix.com.br',
+  from: '',
   to,
   subject,
   text,

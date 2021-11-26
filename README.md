@@ -13,8 +13,6 @@
   <img alt="Coverage" src="shields/coverage.svg?" />
 </p>
 
-<br />
-
 <h1></h1>
 
 <p align="center">
